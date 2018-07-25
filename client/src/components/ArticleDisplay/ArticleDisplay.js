@@ -1,22 +1,22 @@
 import React from "react";
 import Article from "./Article";
 
-const testArray = [
-    {
-        title: "glurb",
-        url: "now"
-    }
 
-]
 
-class ArticleDisplay extends React.Component {
-    render() {
-        return (
-            <div>
-                <Article array = {testArray}/>
-            </div>
-        )
-    }
-};
+// class ArticleDisplay extends React.Component {
+//     render() {
+//         return (
+//             <div>
+//                 <Article array = {testArray}/>
+//             </div>
+//         )
+//     }
+// };
+
+const ArticleDisplay = (props) => (
+    <div>
+        <Article entry = {props.entry}/>
+    </div>
+);
 
 export default ArticleDisplay;

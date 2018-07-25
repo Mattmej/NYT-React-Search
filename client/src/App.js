@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import ArticleDisplay from "./components/ArticleDisplay";
+
+const testArray = [
+    {
+        title: "glurb",
+        date: "now"
+    }
+
+]
 
 // class App extends Component {
 //   render() {
@@ -17,5 +26,22 @@ import './App.css';
 //     );
 //   }
 // }
+
+class App extends Component {
+
+    selectObject = (array) => {
+        return array[0];
+    }
+
+    render() {
+        return(
+            <div>
+                <ArticleDisplay entry = {this.selectObject(testArray)}/>
+            </div>
+        )
+    }
+};
+
+
 
 export default App;

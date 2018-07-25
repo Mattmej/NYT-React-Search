@@ -5,11 +5,11 @@ const Article = (props) => (
 
             <div className="card">
                 <div className = "card-header">
-                    <h3>{props.array.title}</h3>
+                    <h3>{props.entry.title}</h3>
                 </div>
 
                 <div className = "card-body">
-                    <p>{props.array.date}</p>
+                    <p>{props.entry.date}</p>
                 </div>
             </div>
 
