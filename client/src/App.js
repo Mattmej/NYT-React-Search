@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import ArticleDisplay from "./components/ArticleDisplay";
 import AppNavbar from "./components/AppNavbar";
+import {Container} from "reactstrap";
 
 const testArray = [
     {
@@ -62,9 +63,11 @@ class App extends Component {
     render() {
         return(
             <div>
-                <AppNavbar/>
-                {/* <ArticleDisplay entry = {this.selectObject(testArray)}/> */}
-                <ArticleDisplay array = {testArray}/>
+                <Container>
+                    <AppNavbar/>
+                    {/* <ArticleDisplay entry = {this.selectObject(testArray)}/> */}
+                    <ArticleDisplay array = {testArray}/>
+                </Container>
             </div>
         )
     }
