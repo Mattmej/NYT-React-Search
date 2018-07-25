@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import ArticleDisplay from "./components/ArticleDisplay";
+import AppNavbar from "./components/AppNavbar";
 
 const testArray = [
     {
@@ -61,6 +62,7 @@ class App extends Component {
     render() {
         return(
             <div>
+                <AppNavbar/>
                 {/* <ArticleDisplay entry = {this.selectObject(testArray)}/> */}
                 <ArticleDisplay array = {testArray}/>
             </div>
