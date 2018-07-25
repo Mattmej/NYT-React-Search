@@ -14,7 +14,7 @@ import Article from "./Article";
 // };
 
 const ArticleDisplay = (props) => (
-    <div className = "mt-3">
+    <div className = "mt-5">
         {/* <Article entry = {props.entry}/> */}
         {(props.array).map((article) => {
             return <Article title={article.title} summary={article.summary} date={article.date}/>

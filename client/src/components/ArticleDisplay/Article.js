@@ -3,8 +3,8 @@ import React from "react";
 // class Article extends React.Component {
 const Article = (props) => (
 
-            <div className="card">
-                <div className = "card-header">
+            <div className="card mb-4">
+                <div className = "card-header bg-info">
                     <h3>{props.title}</h3>
                 </div>
 
