@@ -66,6 +66,7 @@ class App extends Component {
                 <Container>
                     <AppNavbar/>
                     {/* <ArticleDisplay entry = {this.selectObject(testArray)}/> */}
+                    
                     <ArticleDisplay array = {testArray}/>
                 </Container>
             </div>
