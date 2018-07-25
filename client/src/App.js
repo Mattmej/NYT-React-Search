@@ -5,8 +5,33 @@ import ArticleDisplay from "./components/ArticleDisplay";
 
 const testArray = [
     {
-        title: "glurb",
-        date: "now"
+        title: "test1",
+        summary: "test1",
+        date: "test1"
+    },
+
+    {
+        title: "test2",
+        summary: "test2",
+        date: "test2"
+    },
+
+    {
+        title: "test3",
+        summary: "test3",
+        date: "test3"
+    },
+
+    {
+        title: "test4",
+        summary: "test4",
+        date: "test4"
+    },
+
+    {
+        title: "test5",
+        summary: "test5",
+        date: "test5"
     }
 
 ]
@@ -29,14 +54,15 @@ const testArray = [
 
 class App extends Component {
 
-    selectObject = (array) => {
-        return array[0];
-    }
+    // selectObject = (array) => {
+    //     return array[0];
+    // }
 
     render() {
         return(
             <div>
-                <ArticleDisplay entry = {this.selectObject(testArray)}/>
+                {/* <ArticleDisplay entry = {this.selectObject(testArray)}/> */}
+                <ArticleDisplay array = {testArray}/>
             </div>
         )
     }
