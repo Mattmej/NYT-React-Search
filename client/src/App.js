@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import ArticleDisplay from "./components/ArticleDisplay";
 import AppNavbar from "./components/AppNavbar";
-import {Container} from "reactstrap";
+import {Container, Jumbotron} from "reactstrap";
 
 const testArray = [
     {
@@ -66,7 +66,10 @@ class App extends Component {
                 <Container>
                     <AppNavbar/>
                     {/* <ArticleDisplay entry = {this.selectObject(testArray)}/> */}
-                    
+                    <Jumbotron className="mt-5">
+                        <h1 className="text-center">React Mongo Scraper</h1>
+                        <p className="text-center">New York Times Edition</p>
+                    </Jumbotron>
                     <ArticleDisplay array = {testArray}/>
                 </Container>
             </div>
