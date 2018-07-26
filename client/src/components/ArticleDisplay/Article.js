@@ -5,12 +5,10 @@ import {Button} from "reactstrap";
 const Article = (props) => (
    <div className="card mb-4">
         <div className = "card-header bg-info">
-            {/* <div> */}
             <h3>
                 {props.title}
                 <Button color="success" className="float-right">Save Article</Button>
             </h3>
-            {/* </div> */}
         </div>
 
         <div className = "card-body">
